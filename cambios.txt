@@ -1,0 +1,27 @@
+Ruleta Felina Versión 2.0
+Cambios Principales:
+1.
+Modo Contrarreloj (Reloj de Arena): Tienes 45 segundos totales. Cada acierto suma tiempo; cada explosión resta tiempo.
+2.
+Tienda de Poderes (Power-ups con Puntos): Comprar escudos anti-explosión o detectores de trampas antes de empezar una nueva ronda usando los puntos asegurados.
+3.
+Efectos de sonido/pistas especiales:  el gato seguro hase un maullido diferente al gato bomba
+4.
+Pistas de Audio Espacial (Localización 3D)
+En lugar de adivinar a ciegas qué gato no explota. cada gato emitirá un maullido en una posición estéreo diferente (Gato 1 a la izquierda extrema, Gato 2 al centro, Gato 3 a la derecha, etc.).
+El reto: Un gato tiene un maullido desafinado o un ronroneo sospechoso en 3D que delata que es la "bomba". El jugador debe usar sus audífonos para identificar cuál evitar.
+5.
+Objetos de Tienda / Poderes (Power-ups)
+Con los puntos acumulados al asegurar ronda (con la tecla Escape), el jugador puede comprar objetos antes de la siguiente ronda en un Menú de Tienda:
+Obgetos disponibles en la tienda.
+🛡️ Escudo de Cascabel: Te protege de 1 explosión sin perder los puntos de la ronda.
+🔍 Ojo de Lince: Revela o elimina 1 gato tramposo de la pantalla.
+🐟 Sardina Dorada: Duplica los puntos obtenidos en la siguiente ronda.
+6.
+Tabla de Clasificación / Récords Locales (LocalStorage)
+Guarda la puntuación máxima en el almacenamiento local para que el lector de pantalla o el motor tts del sistema le anuncie al jugador cuando rompe su propio récord al finalizar la partida
+Modos de Juego Adicionales.
+1.
+Modo Contrarreloj (Reloj de Arena): Tienes 45 segundos totales. Cada gato correcto suma +3 segundos; cada gato que explota te resta -10 segundos.
+2.
+Modo "El Gato Saboteador": Uno de los gatos va cambiando de lugar cada 3 segundos con un sonido de deslizamiento panóramico.

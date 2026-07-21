@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruleta Felina</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Howler.js para audio profesional y 3D -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.min.js"></script>
+</head>
+<body role="application" tabindex="0">
+
+    <!-- Lector de pantalla dinámico aria-live -->
+    <div id="accessible-speaker" role="status" aria-live="assertive" aria-atomic="true" style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;"></div>
+
+    <div class="game-container">
+        <header>
+            <h1 id="game-title">🐱 Ruleta Felina</h1>
+        </header>
+
+        <!-- Marcador principal ampliado -->
+        <div class="scoreboard">
+            <div class="stat-box"><span class="label">Ronda</span><span id="txt-ronda" class="value">--</span></div>
+            <div class="stat-box"><span class="label">Puntos Totales</span><span id="txt-puntos-totales" class="value">0</span></div>
+            <div class="stat-box"><span class="label">Puntos Ronda</span><span id="txt-puntos-ronda" class="value">0</span></div>
+            <div class="stat-box"><span class="label">Vidas / Tiempo</span><span id="txt-vidas" class="value">--</span></div>
+            <div class="stat-box"><span class="label">Récord</span><span id="txt-record" class="value">0</span></div>
+        </div>
+
+        <!-- Panel de inventario de poderes -->
+        <div id="inventory-panel" class="scoreboard" style="margin-top: 10px; background: rgba(0,0,0,0.3);">
+            <div class="stat-box"><span class="label">🛡️ Escudos</span><span id="inv-escudos" class="value">0</span></div>
+            <div class="stat-box"><span class="label">🔍 Lince</span><span id="inv-lince" class="value">0</span></div>
+            <div class="stat-box"><span class="label">🐟 Sardinas</span><span id="inv-sardinas" class="value">0</span></div>
+        </div>
+
+        <div class="display-panel">
+            <p id="game-status">Inicializando sistema de audio...</p>
+        </div>
+
+        <div id="cats-container" class="cats-grid">
+            <!-- Render dinámico aquí (Gatos, Menú o Tienda) -->
+        </div>
+
+        <div class="actions-panel">
+            <button id="btn-escape" class="btn btn-danger" disabled>💰 Asegurar Puntos (Escape)</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
